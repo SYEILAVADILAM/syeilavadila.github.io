@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000000;
+}
+
+nav {
+    background: #000000;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, #C7B7A3 0%, #E8D8C4 100%);
+    border-image-slice: 1;
+
+    padding: 0 80px;
+    height: 80px;
+    width: 100%;
+}
+
+
+label.logo {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 80px;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 81px;
+    letter-spacing: 1px;
+
+    color: #C4C4C4;
+    padding: 7px 13px;
+    text-transform: tittlecase;
+}
+
+a.active,
+a:hover {
+    color: #FFFFFF;
+    transition: .5s;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+.text-medium-gradient {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 80px;
+    letter-spacing: 1px;
+
+    background: linear-gradient(89.34deg, #B19470 0.57%, #F1E4C3 96.53%);
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-medium-bold {
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 80px;
+    letter-spacing: 1px;
+}
+
+.text-medium-semibold {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.und {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, #C7B7A3 0%, #E8D8C4 100%);
+    border-image-slice: 1;
+    width: 100%;
+}
+
+.text-large-white {
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 80px;
+    /* identical to box height, or 175% */
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+
+.text-description-white {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 175% */
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+
+.text-small-black {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 175% */
+    letter-spacing: 1px;
+
+    color: #1E1E1E;
+}
+
+.text-small-white {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 175% */
+    letter-spacing: 1px;
+
+    color: #FFFFFF;
+}
+
+.v-aligment-center-sb {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.space-between {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    padding: 0px 16px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    label.logo {
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 930px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    a:hover,
+    a.active {
+        background: none;
+        color: #0082e6;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
